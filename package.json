@@ -1,9 +1,12 @@
 {
+  "homepage": "https://kraggy09.github.io/Landing-Page",
   "name": "landing_page",
   "version": "1.0.0",
   "description": "This is the Landing Page",
   "scripts": {
     "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npx parcel index.html",
     "build": "npx parcel build index.html"
   },
@@ -16,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/kraggy09/Landing-Page/issues"
   },
-  "homepage": "https://github.com/kraggy09/Landing-Page#readme",
   "devDependencies": {
     "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
